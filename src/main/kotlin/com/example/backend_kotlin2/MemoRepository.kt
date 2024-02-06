@@ -1,4 +1,6 @@
 package com.example.backend_kotlin2
 
-interface MemoRepository {
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface MemoRepository :JpaRepository<MemoEntity, Int>{
 }
